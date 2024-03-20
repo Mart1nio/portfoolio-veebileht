@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset-"X UA Compatible" content-"IE=edge">
+        <meta name-"viewport" content-"width-device width, initial scale-1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <body>
+<script src="https://kit.fontawesome.com/ad4b177db9.js" crossorigin="anonymous"></script>
+<div id="header">
+    <div class="container"></div>
+    <nav>
+        <img src="images/logo1.png" class="logo">
+        <ul>
+            <li><a href="#">Koduleht</a></li>
+            <li><a href="#">Minust</a></li>
+            <li><a href="#">Teenused</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Portfoolio</a></li>
+        </ul>
+    </nav>
+<div class="header-text">
+    <p>Kujundaja</p>
+    <h1>Tere, ma olen <span>Martin</span><br> ja ma elan Eestis</h1>
+</div>
+<!--Minust-->
+</div>
+<div id="Minust">
+    <div class="container">
+        <div class="row">
+            <div class="Minust-col-1">
+               <img id="Pizza" src="images/Pizza man.png">
+            </div>
+            <div class="Minust-col-2">
+                <h1 class="sub-title">Minust</h1>
+                <p>Olen noores vanuses õpilane, kes on lapsest saadik 
+                    tegelenud kunstika. Põhikoolist kuni nüüd kutse 
+                    hariduseni. peale gümnaasiumi lõpetasin sain aru,
+                et parim viis kasutada ära oma kunstilist võimet, et teenida
+            elatavat kulu raha on õppida kujundamist ja läbi selle õppida
+        veebimajutust.</p>
+
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('oskused')">Oskused</p>
+            <p class="tab-links" onclick="opentab('kogemused')">Kogemused</p>
+            <p class="tab-links" onclick="opentab('haridus')">Haridus</p>
+        </div>
+        <div class="tab-contents active-tab" id="oskused">
+            <ul>
+                <li><span>Illustraator</span><br>Disainimine ja illustreerimine</li>
+                <li><span>Photoshop</span><br>Pildi manipuleerimine ja kujundamine</li>
+                <li><span>Blender</span><br>3d kujundamine ja animatsioon</li>
+                <li><span>Premier Pro/After effects</span><br>Animatsioon ja videotootlus</li>
+            </ul>
+            </div>
+            <div class="tab-contents" id="kogemused">
+                <ul>
+                    <li><span>2022 - Praeguseni</span><br>Haabersti Rimi e-poe komplekteerija</li>
+                    <li><span>2022 - 2023</span><br>Expressposti lehekandija</li>
+                    <li><span>2023 - 2023</span><br>Amigo klubi baariabiline</li>
+                </ul>
+                </div>
+                <div class="tab-contents" id="haridus">
+                    <ul>
+                        <li><span>2023 - Praeguseni</span><br>Parnu saksatehnoloogia koolis</li>
+                    <li><span>2020 - 2023</span><br>Tallinna kunstigumnaasium</li>
+                    <li><span>2011 - 2020</span><br>Tallinna Jarveotsa Gumnaasiumis</li>
+                    </ul>
+                    </div>
+        </div>
+    </div>
+</div>
+<!--Teenused-->
+<div id="teenused">
+    <div class="container"></div>
+    <h1 class="sub-title">Minu teenused</h1>
+    <div class="services-list">
+        <div>
+        <i class="fa-solid fa-code"></i>
+        <h2> Veebi design</h2>
+        <p>Pudrud ja kapsad on todidud mida saab suua</p>
+        <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-palette"></i>
+            <h2>Kujundamine</h2>
+            <p>Pudrud ja kapsad on todidud mida saab suua</p>
+            <a href="#">Learn more</a>
+         </div>
+            <div>
+                <i class="fa-solid fa-stamp"></i>
+                <h2>Esemete peale kujundamine</h2>
+                <p>Pudrud ja kapsad on todidud mida saab suua</p>
+                <a href="#">Learn more</a>
+            </div>
+    </div>
+</div>
+<!--Portfoolio-->
+<div id="Portfoolio">
+    <div class="container"></div>
+     <h1 class="sub-title">Minu tood</h1>
+     <div class="work-list">
+        <div class="work">
+            <img id="heartz" src="images/Heart originaal (1).png">
+        </div>
+        <div class="work">
+            <img id="heartz" src="images/Smiley Lightning blue.png">
+        </div>
+        <div class="work">
+            <img id="heartz" src="images/visiitkaart finished.jpg_">
+        </div>
+     </div>
+</div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+    </body>
+</html>
